@@ -1,7 +1,7 @@
 # Compliance Minimization via Physics-Informed Gaussian Processes
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-This repository contains the implementation of our paper **"Compliance Minimization via Physics-Informed Gaussian Processes (PIGPs)"**. We propose a mesh-free and simultaneous optimization framework for compliance minimization (CM), where both design and state variables are parameterized using Gaussian Process (GP) priors. Each GP employs an independent kernel while sharing a multi-output neural network (NN) as its mean function.
+This repository contains the implementation of our paper **"Compliance Minimization via Physics-Informed Gaussian Processes"** (PIGPs). We propose a mesh-free and simultaneous optimization framework for compliance minimization (CM), where both design and state variables are parameterized using Gaussian Process (GP) priors. Each GP employs an independent kernel while sharing a multi-output neural network (NN) as its mean function.
 
 ---
 
