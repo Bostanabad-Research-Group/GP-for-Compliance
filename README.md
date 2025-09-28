@@ -1,15 +1,14 @@
 # Compliance Minimization via Physics-Informed Gaussian Processes
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-This repository contains the implementation of our paper **"Compliance Minimization via Physics-Informed Gaussian Processes (PIGPs)"**.  
-We propose a mesh-free and simultaneous optimization framework for compliance minimization (CM), where both design and state variables are parameterized using Gaussian Process (GP) priors. Each GP employs an independent kernel while sharing a multi-output neural network (NN) as its mean function.
+This repository contains the implementation of our paper **"Compliance Minimization via Physics-Informed Gaussian Processes (PIGPs)"**. We propose a mesh-free and simultaneous optimization framework for compliance minimization (CM), where both design and state variables are parameterized using Gaussian Process (GP) priors. Each GP employs an independent kernel while sharing a multi-output neural network (NN) as its mean function.
 
 ---
 
 ## Framework Overview
 The architecture of the proposed PIGP framework is illustrated below:
 
-![PIGP framework for CM: the mean functions are parameterized with the multi-outputs from the PGCAN having three modules: convolutional neural network-based feature encoding, feature interpolation, and decoding via a shallow MLP. GPs are employed on those mean functions to impose displacement BCs and density constraints.](figures/Schematic_TO.pdf)
+![PIGP framework for CM: the mean functions are parameterized with the multi-outputs from the PGCAN having three modules: convolutional neural network-based feature encoding, feature interpolation, and decoding via a shallow MLP. GPs are employed on those mean functions to impose displacement BCs and density constraints.](figures/Schematic_TO.png)
 
 - The mean function is parameterized with a **Parametric Grid Convolutional Attention Network (PGCAN)**, which mitigates spectral bias and provides explicit control over design complexity.  
 - All parameters of the GP-based representation are estimated by **simultaneously minimizing**:
@@ -20,7 +19,7 @@ The architecture of the proposed PIGP framework is illustrated below:
 
 Typical results compared to the SIMP baseline are shown below:
 
-![Comparison of final designs: For both approaches we visualize the topologies corresponding to the median compliance in each example. The cell vertices of PGCAN are also shown to demonstrate the effect of $Res$ on partitioning the design domain via PGCAN's encoder.](figures/Top_comparison.pdf)
+![Comparison of final designs: For both approaches we visualize the topologies corresponding to the median compliance in each example. The cell vertices of PGCAN are also shown to demonstrate the effect of $Res$ on partitioning the design domain via PGCAN's encoder.](figures/Top_comparison.png)
 
 ---
 
