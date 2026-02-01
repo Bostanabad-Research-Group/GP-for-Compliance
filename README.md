@@ -96,12 +96,19 @@ Contributions are welcome!
 If you use this code or find our work useful, please cite:  
 
 ```bibtex
-@article{sun2025complianceminimizationphysicsinformedgaussian,
-  title   = {Compliance Minimization via Physics-Informed Gaussian Processes},
-  author  = {Xiangyu Sun and Amin Yousefpour and Shirin Hosseinmardi and Ramin Bostanabad},
-  year    = {2025},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.LG},
-  url     = {https://arxiv.org/abs/2507.09968},
+@article{sun_compliance_2025,
+	title = {Compliance minimization via physics-informed {Gaussian} processes},
+	volume = {68},
+	issn = {1615-147X, 1615-1488},
+	url = {https://link.springer.com/10.1007/s00158-025-04179-5},
+	doi = {10.1007/s00158-025-04179-5},
+	language = {en},
+	number = {12},
+	urldate = {2025-11-27},
+	journal = {Structural and Multidisciplinary Optimization},
+	author = {Sun, Xiangyu and Yousefpour, Amin and Hosseinmardi, Shirin and Bostanabad, Ramin},
+	month = dec,
+	year = {2025},
+	pages = {259},
 }
 ```
